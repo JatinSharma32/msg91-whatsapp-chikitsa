@@ -1,0 +1,96 @@
+{
+    "appointment_pdf":{
+        "integrated_number": "918306935111",
+        "content_type": "template",
+        "payload": {
+            "to": "",
+            "type": "template",
+            "template": {
+                "name": "",
+                "language": {
+                    "code": "en",
+                    "policy": "deterministic"
+                },
+                "components": [
+                    {
+                        "type": "header",
+                        "parameters": [
+                            {
+                                "type": "document",
+                                "document": {
+                                    "link": "",
+                                    "filename": "document"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "body",
+                        "parameters": [
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "messaging_product": "whatsapp"
+        }
+    },
+    "appointment_simple":{
+        "integrated_number": "918306935111",
+        "content_type": "template",
+        "payload": {
+            "to": "",
+            "type": "template",
+            "template": {
+                "name": "",
+                "language": {
+                    "code": "en_US",
+                    "policy": "deterministic"
+                },
+                "components": [
+                    {
+                        "type": "body",
+                        "parameters": [
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            },
+                            {
+                                "type": "text",
+                                "text": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "messaging_product": "whatsapp"
+        }
+    }
+}
