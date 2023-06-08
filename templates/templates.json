@@ -1,12 +1,12 @@
 {
-    "appointment_pdf":{
+    "appointment_pdf": {
         "integrated_number": "918306935111",
         "content_type": "template",
         "payload": {
             "to": "",
             "type": "template",
             "template": {
-                "name": "",
+                "name": "appointment_pdf",
                 "language": {
                     "code": "en",
                     "policy": "deterministic"
@@ -50,14 +50,14 @@
             "messaging_product": "whatsapp"
         }
     },
-    "appointment_simple":{
+    "appointment_simple": {
         "integrated_number": "918306935111",
         "content_type": "template",
         "payload": {
             "to": "",
             "type": "template",
             "template": {
-                "name": "",
+                "name": "appointment_simple",
                 "language": {
                     "code": "en_US",
                     "policy": "deterministic"
