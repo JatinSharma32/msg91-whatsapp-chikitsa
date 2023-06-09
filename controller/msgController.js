@@ -10,14 +10,16 @@ const appointment_pdfVarFill = (reqBody) => {
     template.payload.to = reqBody.variables.mobileNo;
     template.payload.template.components[0].parameters[0].document.link =
         reqBody.variables.headerURL;
+    template.payload.template.components[0].parameters[0].document.filename = `${reqBody.variables.username}_Appointment_Slip`;
+    reqBody.variables.headerURL;
     template.payload.template.components[1].parameters[0].text =
-        reqBody.variables.bodyVar1;
+        reqBody.variables.username;
     template.payload.template.components[1].parameters[1].text =
-        reqBody.variables.bodyVar2;
+        reqBody.variables.doctorname;
     template.payload.template.components[1].parameters[2].text =
-        reqBody.variables.bodyVar3;
+        reqBody.variables.date;
     template.payload.template.components[1].parameters[3].text =
-        reqBody.variables.bodyVar4;
+        reqBody.variables.time;
     return template;
 };
 
@@ -25,15 +27,15 @@ const appointment_simpleVarFill = (reqBody) => {
     const template = appointment_simple;
     template.payload.to = reqBody.variables.mobileNo;
     template.payload.template.components[0].parameters[0].text =
-        reqBody.variables.bodyVar1;
+        reqBody.variables.username;
     template.payload.template.components[0].parameters[1].text =
-        reqBody.variables.bodyVar2;
+        reqBody.variables.doctorname;
     template.payload.template.components[0].parameters[2].text =
-        reqBody.variables.bodyVar3;
+        reqBody.variables.date;
     template.payload.template.components[0].parameters[3].text =
-        reqBody.variables.bodyVar4;
+        reqBody.variables.time;
     template.payload.template.components[0].parameters[4].text =
-        reqBody.variables.bodyVar5;
+        reqBody.variables.docslink;
     return template;
 };
 
